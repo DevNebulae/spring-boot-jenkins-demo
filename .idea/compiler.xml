@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="jenkins-demo_main" target="1.8" />
+      <module name="jenkins-demo_test" target="1.8" />
       <module name="spring-boot-jenkins-demo_main" target="1.8" />
       <module name="spring-boot-jenkins-demo_test" target="1.8" />
     </bytecodeTargetLevel>
