@@ -39,6 +39,10 @@ repositories {
 	mavenCentral()
 }
 
+jar {
+	archiveName 'jenkins-demo.jar'
+}
+
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('com.fasterxml.jackson.module:jackson-module-kotlin')
