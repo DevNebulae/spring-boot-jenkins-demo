@@ -1,0 +1,19 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    networks:
+      - otap
+    ports:
+      - '8080:8080'
+    volumes:
+      - /var/jenkins_home
+      - /var/log/jenkins
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss:latest
+    networks:
+      - otap
+    ports:
+      - '8081:8081'
+networks:
+  otap:
